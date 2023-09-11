@@ -1,0 +1,85 @@
+:root{
+    --color-white: white;
+    --color-dark-grey: rgb(26, 24, 24);
+    --color-medium-grey: rgb(66, 64, 64);
+    --color-light-grey: rgb(163, 159, 159);
+    --color-blue: rgba(0, 60, 255, 0.61);
+    --color-red: red;
+}
+
+*{
+    box-sizing: border-box;
+}
+header h1{
+    margin: 0;
+    background-color: var(--color-light-grey);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+body{
+    margin:0;
+    background-color: var(--color-dark-grey);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.tally-box {
+    background: var(--color-medium-grey);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#counter-value::part(input){
+ text-align: center;
+ padding: 100px;
+}
+
+#counter-value::part(base){
+    background: none;
+    height:200px;
+}
+
+#counter-value::part(input){
+    font-size: 50px;
+    color:white; 
+}
+
+
+.counter-button::part(base){
+  
+    padding-left: 45%;
+    padding-right: 50%;
+    font-size: 2rem;
+    height: 100px;
+    
+}
+.counter-button{
+    
+    transition: transform 0.2s;
+    transform: translateY(0);
+}
+
+.counter-button:active{
+    background: var(--color-blue);
+    transform: translateY(2%);
+}
+.counter-button:disabled{
+    background: var(--color-red);
+    opacity: 0.2;
+} 
+.reset-button{
+    display: flex;
+    justify-content: center;
+}
+.reset-button::part(base){
+    color:white;
+    font-size: 2rem;
+}
+footer{
+    background-color: var(--color-light-grey);
+    padding: 30px;
+    font-size: 1rem;
+    text-align: center;
+}

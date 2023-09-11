@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
+    <title>DWA10 Tally App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tally count</h1>
+    </header>
+
+    <sl-input
+        id="counter-value" 
+        data-key="number" 
+        readonly value="0">
+    </sl-input>
+
+    <div class="tally-box">
+        <sl-icon-button 
+            data-key="subtract" 
+            class="counter-button" 
+            name="arrow-down-circle"
+            >
+        </sl-icon-button>
+    
+        <sl-icon-button 
+            data-key="add" 
+            class="counter-button" 
+            name="arrow-up-circle">
+        </sl-icon-button>
+    </div>
+  
+        <sl-icon-button
+            data-key="reset"
+            class="reset-button"
+            name="arrow-repeat">
+        </sl-icon-button>
+        <sl-dialog
+            data-reset-overlay
+            label="Confirmation Message"
+            class="reset-overlay">
+
+        <p>The Counter Has Been Reset!!</p>
+
+        </sl-dialog>
+    <footer>
+        This is a test project for learning javascript
+        <br>
+        <br>
+        Inspired by <a href="tallycount.app">Tally Count</a>
+    </footer>
+</body>
+
+</html>
