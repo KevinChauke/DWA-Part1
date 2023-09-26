@@ -1,0 +1,12 @@
+:root{
+    --color-white: white;
+    --color-dark-grey: rgb(26, 24, 24);
+    --color-medium-grey: rgb(66, 64, 64);
+    --color-light-grey: rgb(163, 159, 159);
+    --color-blue: rgba(0, 60, 255, 0.61);
+    --color-red: red;
+}
+
+*{
+    box-sizing: border-box;
+}
